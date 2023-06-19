@@ -43,6 +43,5 @@ public class Main {
     System.out.println(person.getEmail());
     person.setEmail("melih_gfb_98hotmail.com");
     System.out.println(person.getEmail());
-
   }
 }
