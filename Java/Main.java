@@ -26,5 +26,22 @@ public class Main {
     car2.applyBreaks(20);
     System.out.println("1. Aracın son hızı " + car.speed);
     System.out.println("2. Aracın son hızı " + car2.speed);
+
+    // CONSTRUCTOR
+    Product product = new Product("MacBook", "Pro", 15000, 500);
+
+    // ENCAPSULATION
+    Person person = new Person();
+    person.firstName = "Melih";
+    person.lastName = "Omaç";
+    person.age = 25;
+
+    // private declaration
+    // person.email = "melihomac@hotmail.com";
+
+    person.setEmail("melihomac@hotmail.com");
+    System.out.println(person.getEmail());
+    person.setEmail("melih_gfb_98hotmail.com");
+    System.out.println(person.getEmail());
   }
 }
