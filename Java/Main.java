@@ -43,5 +43,9 @@ public class Main {
     System.out.println(person.getEmail());
     person.setEmail("melih_gfb_98hotmail.com");
     System.out.println(person.getEmail());
+
+    ProductEncapsulation productEncapsulation = new ProductEncapsulation("Airpods", "Pro", 100, "black");
+    ProductManager productManager = new ProductManager();
+    productManager.add(productEncapsulation);
   }
 }
