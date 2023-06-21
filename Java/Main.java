@@ -28,7 +28,7 @@ public class Main {
     System.out.println("2. Aracın son hızı " + car2.speed);
 
     // CONSTRUCTOR
-    Product product = new Product("MacBook", "Pro", 15000, 500);
+    // Product product = new Product("MacBook", "Pro", 15000, 500);
 
     // ENCAPSULATION
     Person person = new Person();
@@ -47,5 +47,12 @@ public class Main {
     ProductEncapsulation productEncapsulation = new ProductEncapsulation("Airpods", "Pro", 100, "black");
     ProductManager productManager = new ProductManager();
     productManager.add(productEncapsulation);
+
+    // INHERITANCE
+    MuhendisSalaryCalculation muhendisSalaryCalculation = new MuhendisSalaryCalculation();
+    muhendisSalaryCalculation.salaryCalculation();
+
+    BaseSalaryCalculation baseSalaryCalculation = new MuhendisSalaryCalculation();
+    baseSalaryCalculation.salaryCalculation(); // Üsttekiyle aynısı
   }
 }
