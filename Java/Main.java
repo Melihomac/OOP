@@ -54,5 +54,11 @@ public class Main {
 
     BaseSalaryCalculation baseSalaryCalculation = new MuhendisSalaryCalculation();
     baseSalaryCalculation.salaryCalculation(); // Üsttekiyle aynısı
+
+    // POLYMORPHISM
+    BaseCreditManager baseCreditManager = new StudentCreditManager();
+    System.out.println("Öğrenci: " + baseCreditManager.creditCalculate(1000));
+    BaseCreditManager baseCreditManager2 = new TeacherCreditManager();
+    System.out.println("Öğretmen: " + baseCreditManager2.creditCalculate(1000));
   }
 }
