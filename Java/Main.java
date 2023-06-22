@@ -60,5 +60,10 @@ public class Main {
     System.out.println("Öğrenci: " + baseCreditManager.creditCalculate(1000));
     BaseCreditManager baseCreditManager2 = new TeacherCreditManager();
     System.out.println("Öğretmen: " + baseCreditManager2.creditCalculate(1000));
+
+    // ABSTRACTION
+    BaseScoreCalculation baseScoreCalculation = new MenScoreCalculator();
+    baseScoreCalculation.scoreCalculate(); // Your Score : 90 (MEN SCORE)
+    baseScoreCalculation.gameOver();
   }
 }
