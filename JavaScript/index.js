@@ -42,3 +42,21 @@ console.log(house.getResidents());
 let irem = new Person("İrem", 21);
 house.addResident(irem);
 console.log(house.getResidents());
+
+
+// Inheritance
+
+class Programmer extends Person {
+    constructor(name, age, company, salary, language) {
+        super(name, age); //Person classını inherit edip oradaki objeleri ve methodları alıyoruz.
+        this.company = company;
+        this.salary = salary;
+        this.language = language;
+    }
+    sayHi = () => {
+        console.log(`Hello, I am a programmer. My name is ${this.getName()}. I work for ${this.company}`);
+    }
+}
+
+let programmer = new Programmer("Melih", 25, "Çözüm-Makina", 4500, "JS");
+programmer.sayHi();
